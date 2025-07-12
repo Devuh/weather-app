@@ -1,3 +1,93 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: lightgray;
+  background-color: #9dd9d2;
+  transition: background-color 1s;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.night {
+  background-color: #9dabd9;
+}
+
+#unit-toggle {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  margin-left: auto;
+  height: 24px;
+  width: 24px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  transition: background-color 0.5s;
+}
+
+#unit-toggle:hover {
+  background-color: rgba(128, 128, 128, 0.24);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+#icon {
+  height: 200px;
+  width: 200px;
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}
+
+input {
+  border: 0px;
+  outline: 0px;
+  border-radius: 40px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#search {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  outline: 0px;
+  border: 0px;
+  background-color: #f4d06f;
+  transition: background-color 0.5s;
+  color: black;
+}
+
+#search.night {
+  background-color: #6fd9f4;
+}
+
+#search:hover {
+  background-color: #c2a556;
+}
+
+#search.night:hover {
+  background-color: #4f9db1;
 }
