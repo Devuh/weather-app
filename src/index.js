@@ -67,6 +67,8 @@ searchButton.addEventListener("click", () => {
       input.value = "";
       toggleNight(weather.currentConditions.datetime);
       loading.remove();
+    }).catch(() => {
+      loading.remove();
     });
   }
 });
